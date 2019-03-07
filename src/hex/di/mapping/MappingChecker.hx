@@ -34,7 +34,7 @@ class MappingChecker
 
 	/** @private */ function new() throw new PrivateConstructorException();
 	
-	static var _dependencies : Map<String, Array<String>> = new Map();
+	@:persistent static var _dependencies : Map<String, Array<String>> = new Map();
 
 	macro public static function check() : Array<Field>
 	{
